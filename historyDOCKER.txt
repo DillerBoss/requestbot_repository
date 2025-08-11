@@ -1,0 +1,914 @@
+    1  exit
+    2  pwd
+    3  clear
+    4  cat ~/.ssh/id_ed25519.pub 
+    5  ssh -i ~/.ssh/id_ed25519 yury@51.250.99.197
+    6  nano ~/.ssh/config
+    7  ssh VDS-Yandex 
+    8  ssh -R 2222:localhost:22 yury@51.250.99.197
+    9  ssh -p 2222 user@localhost
+   10  wget http://89.169.178.144:8000 /home/yury/alltest
+   11  ls -l
+   12  wget http://89.169.178.144:8000/home/yury/alltest
+   13  wget http://89.169.178.144:8000/alltest
+   14  ls -l
+   15  cat index.html 
+   16  rm logfile.txt index.html test test.file testsftp yury@89.169.178.144 
+   17  wget http://89.169.178.144:8000/alltest
+   18  wget http://89.169.178.144:8000/alltest/
+   19  ls -l
+   20  wget http://89.169.178.144:8000/all_test/
+   21  wget http://89.169.178.144:8000/all_test
+   22  ls -l
+   23  ls -la all_test 
+   24  ls -la all_test/
+   25  ls -l index.html 
+   26  ls -l all_test 
+   27  ls -l all_test/ 
+   28  sftp yury@89.169.178.144
+   29  ls -l
+   30  rm all_test 
+   31  sftp yury@89.169.178.144
+   32  ls -l
+   33  ls -l all_test/
+   34  ls -l
+   35  rsync -avz all_test/ yury@89.169.178.144:/home/yury/testdir
+   36  ls -la
+   37  ssh-copy-id -i .ssh/id_ed25519.pub yury@89.169.178.144
+   38  cat .ssh/id_ed25519
+   39  cat .ssh/id_ed25519.pub 
+   40  ssh-copy-id -i .ssh/id_ed25519.pub yury@89.169.178.144
+   41  ssh yury@89.169.178.144
+   42  cat .ssh/id_ed25519.pub 
+   43  sudo find / -name config
+   44  cat /home/home/.ssh/config 
+   45  nano /home/home/.ssh/config 
+   46  ssh VDS-Yandex 
+   47  ls -l
+   48  cd all_test/
+   49  ls -l
+   50  sort
+   51  sor /home/
+   52  sort /home/
+   53  sftp yury@51.250.103.177
+   54  ls -l
+   55  rm part-a*
+   56  ls -l
+   57  scp yury@51.250.103.177
+   58  sftp yury@51.250.103.177
+   59  ls -l
+   60  scp part-a* yury@51.250.103.177:/home/yury/bigfile
+   61  sudo apt install lftp
+   62  lftp ftp://51.250.103.177
+   63  lftp ftp://yury:51.250.103.177
+   64  lftp ftp://51.250.103.177
+   65  cat /etc/resolv.conf 
+   66  nslookup oblstom29.ru
+   67  dig oblstom29.ru
+   68  cat /etc/hosts
+   69  nmcli
+   70  sudo apt install network-manager
+   71  nmcli
+   72  ip link show
+   73  ifconfig -a
+   74  cat /etc/network/if-pre-up.d/
+   75  sudo systemctl status systemd-resolved.service 
+   76  ls /dev/
+   77  htop
+   78  htop > /dev/null 2>&1
+   79  htop > /dev/null 
+   80  head -10 /dev/urandom > ~/random
+   81  ls -l
+   82  cat random 
+   83  ls /sys/devices/
+   84  ls /sys/bus/
+   85  ls /sys/block/
+   86  ls /sys/class/
+   87  cd /sys
+   88  ls block/
+   89  ls bus/
+   90  ls bus/usb/
+   91  ls bus/usb/drivers
+   92  ls bus/usb/drivers/usb
+   93  ls /sys/class/net/
+   94  ip link show
+   95  cd ..
+   96  cat /proc/cpuinfo 
+   97  cd proc/
+   98  ls -l
+   99  ls 
+  100  lsmod
+  101  fdisk -l
+  102  sudo fdisk -l
+  103  fdisk /dev/sdb
+  104  sudo fdisk /dev/sdb
+  105  pvdisplay 
+  106  sudo pvdisplay 
+  107  vgdisplay 
+  108  sudo vgdisplay 
+  109  fdisk
+  110  sudo fdisk -l
+  111  sudo fdisk /dev/sdb
+  112  sudo pvcreate /dev/sdb1
+  113  sudo fdisk -l
+  114  sudo pvcreate 
+  115  sudo pvcreate --help
+  116  sudo pvcreate /dev/sdb1
+  117  sudo pvcreate /dev/sdb2
+  118  pvdisplay 
+  119  sudo pvdisplay 
+  120  man vgcreate
+  121  sudo vgcreate 
+  122  man vgcreate
+  123  vgcreate vg_test /dev/sdb1 /dev/sdb2
+  124  sudo vgcreate vg_test /dev/sdb1 /dev/sdb2
+  125  sudo lvcreate -n lv1 -L 2G vg_test
+  126  sudo lvcreate -n lv1 -L 13G vg_test
+  127  sudo lvcreate -n lv2 -L 13G vg_test
+  128  sudo lvcreate -n lv2 -L 12G vg_test
+  129  lvdisplay 
+  130  sudo lvdisplay 
+  131  sudo mkfs.ext4 /dev/vg_test/lv1
+  132  sudo mkfs.ext4 /dev/vg_test/lv2
+  133  lvdisplay 
+  134  sudo lvdisplay 
+  135  sudo lvresize -L 7 vg_test/lv2
+  136  sudo lvdisplay 
+  137  sudo lvresize -L 7G vg_test/lv2
+  138  sudo lvdisplay 
+  139  sudo lvresize -L 7G vg_test/lv2
+  140  sudo resize2fs /dev/vg_test/lv2 7G
+  141  sudo lvresize -L 7G vg_test/lv2
+  142  sudo lvdisplay 
+  143  sudo pvdisplay 
+  144  
+  145  sudo fdisk -l
+  146  sudo dd
+  147  sudo dd if=/dev/sda of=/root/backup.mbr bs=512 count=1
+  148  clear
+  149  sudo apt-get install lilo
+  150  cd /dev/disk/by-id
+  151  ls
+  152  cd ..
+  153  vim /boot/grub/grub.cfg 
+  154  sudo vim /boot/grub/grub.cfg 
+  155  clear
+  156  grub-install 
+  157  grub-install --version
+  158  cat /boot/grub/grub.cfg 
+  159  sudo cat /boot/grub/grub.cfg 
+  160  clear
+  161  cat /etc/default/grub
+  162  sudo vim /etc/default/grub
+  163  cd /etc/grub.d/
+  164  ls
+  165  cat 00_header 
+  166  cat 10_linux
+  167  clear
+  168  cat 10_linux
+  169  update-grub
+  170  sudo update-grub
+  171  shutdown -r now
+  172  sudo nano /etc/default/grub
+  173  shutdown -r now
+  174  ls /lib
+  175  ls /usr/lib/
+  176  cat /etc/ld.so.conf
+  177  ls /etc/ld.so.conf.d/
+  178  cd /etc/ld.so.conf.d/
+  179  ls 
+  180  cat libc.conf 
+  181  cat x86_64-linux-gnu.conf 
+  182  cd /etc/
+  183  ls
+  184  ls | grep ld.
+  185  whereis ls
+  186  ldd /usr/bin/ls
+  187  lls --help
+  188  ldd --help
+  189  man ldd
+  190  man whereis
+  191  cat /etc/ld.so.conf
+  192  export LD_LIBRARY_PATH=/opt/soft/lib
+  193  whereis ifconfig
+  194  ifconfig
+  195  ipconfig
+  196  sudo apt install ifconfig
+  197  sudo apt install net-tools
+  198  ifconfig
+  199  whereis ifconfig
+  200  ldd /usr/sbin/ifconfig
+  201  sudo nano /etc/ld.so.conf
+  202  pwd
+  203  cd /home
+  204  pwd
+  205  ls
+  206  cd /home/
+  207  pwd
+  208  ls
+  209  cd /home/home/
+  210  sudo nano /etc/ld.so.conf
+  211  ldconfig
+  212  sudo ldconfig
+  213  xargs --help
+  214  ls -l
+  215  mkdir parts
+  216  ls "part*"
+  217  ls part*
+  218  ls part???
+  219  ls part??? | xargs -I {} mv {} /parts/
+  220  ls part??? | xargs -I {} mv {} /parts
+  221  sudo ls part??? | xargs -I {} mv {} /parts
+  222  ls -l
+  223  sudo -i
+  224  du
+  225  df
+  226  fdisk -l
+  227  sudo
+  228  sudo -i
+  229  df
+  230  sudo -i
+  231  ls
+  232  q
+  233  r
+  234  reboot
+  235  exit
+  236  df
+  237  sudo -i
+  238  df 
+  239  ls
+  240  cd /mnt/mounting/
+  241  cd ..
+  242  pwd
+  243  cd pwd
+  244  cd ..
+  245  cd /home/
+  246  cd /mnt/mounting/lost+found/
+  247  cd /mnt/mounting/
+  248  cd -
+  249  cd --
+  250  sudo quotaoff /dev/sdb1
+  251  sudo quotaoff /mnt/mounting/
+  252  cat /etc/fstab 
+  253  sudo quotaoff /mnt/mounting/
+  254  sudo quotacheck -cug /mnt/mounting/
+  255  sudo umount /mnt/mounting 
+  256  sudo tune2fs --help
+  257  sudo tune2fs -O quota /mnt/mounting/
+  258  df
+  259  sudo tune2fs -O quota /dev/sdb1
+  260  sudo e2fsck -f /dev/sdb1
+  261  sudo mount /dev/sdb1 /mnt/mounting/
+  262  sudo quotaon /mnt/mounting/
+  263  sudo vi /etc/fstab 
+  264  quotaon -p /mnt/mounting/
+  265  repquota --help
+  266  repquota -a
+  267  edquota username
+  268  edquota home
+  269  sudo vi /etc/fstab 
+  270  reboot
+  271  sudo reboot
+  272  df -hT
+  273  clear
+  274  df -hT
+  275  sudo quotaoff /dev/sdb1
+  276  sudo quotaoff /mnt/mounting/
+  277  quotaonf -p /mnt/mounting/
+  278  quotaon -p /mnt/mounting/
+  279  quotaoff -p /mnt/mounting/
+  280  quotaoff  /mnt/mounting/
+  281  sudo quotaoff /mnt/mounting/
+  282  quotaoff --help
+  283  quotaoff -a /mnt/mounting/
+  284  quotaoff -a 
+  285  sudo quotaoff -a 
+  286  sudo find / -name aquota.*
+  287  sudo rm /mnt/mounting/aquota.*
+  288  sudo find / -name aquota.*
+  289  sudo quotaoff -a 
+  290  sudo quotaoff -f /mnt/mounting
+  291  sudo quotactl -s /dev/sdb1
+  292  sudo quotaoff /dev/sdb
+  293  sudo quotactl -s /dev/sdb1
+  294  quotaon -p /mnt/mounting
+  295  sudo lsof | grep aquota
+  296  sudo umount /mnt/mounting
+  297  sudo quotaoff -f /mnt/mounting
+  298  df
+  299  mount /dev/sdb1 /mnt/mounting/
+  300  sudo mount /dev/sdb1 /mnt/mounting/
+  301  sudo quotaoff /mnt/mounting/
+  302  find /dev/sdb1 -name quotactl
+  303  find / -name quotactl
+  304  sudo find / -name quotactl
+  305  sudo apt-get purge quota 
+  306  sudo apt-get install quota
+  307  df -Th
+  308  reboot
+  309  sudo reboto
+  310  sudo reboot
+  311  df -Th
+  312  sudo quotaoff /mnt/mounting/
+  313  sudo man quotacheck 
+  314  ls /mnt/mounting/
+  315  sudo man quotacheck -cug /mnt/mounting/
+  316  sudo quotacheck -cug /mnt/mounting/
+  317  sudo quotacheck -cug /mnt/mounting
+  318  sudo quotacheck -cugf /mnt/mounting
+  319  sudo quotacheck -cugf /mnt/mounting/
+  320  ls /mnt/mounting/
+  321  ls -la /mnt/mounting/
+  322  df
+  323  sudo -i
+  324  touch /mnt/mounting/txt.txt
+  325  sudo chown home:root /mnt/mounting/
+  326  touch /mnt/mounting/txt.txt
+  327  sudo edquota -u /mnt/mounting/
+  328  sudo edquota -u /mnt/mounting
+  329  sudo edquota -u home
+  330  touch /mnt/mounting/txt.txt2
+  331  touch /mnt/mounting/txt.txt4
+  332  touch /mnt/mounting/txt.txt6
+  333  touch /mnt/mounting/txt.txt7
+  334  touch /mnt/mounting/txt.[10..20]
+  335  sudo edquota -u home
+  336  ls /mnt/mounting/
+  337  touch /mnt/mounting/txt.{10..20}
+  338  ls /mnt/mounting/
+  339  sudo edquota -u home
+  340  vi /mnt/mounting/txt.10 
+  341  sudo edquota -u home
+  342  cd /mnt/mounting/
+  343  cp txt.10 txt.tk
+  344  cp txt.10 txt.tj
+  345  cp txt.10 txt.tl
+  346  cp txt.10 txt.tm
+  347  cp txt.10 txt.tn
+  348  cp txt.10 txt.tp
+  349  cp txt.10 txt.td
+  350  cp txt.10 txt.ts
+  351  cp txt.10 txt.tf
+  352  cp txt.10 txt.tt
+  353  cp txt.10 txt.tuu
+  354  sudo edquota -u home
+  355  ls
+  356  cd -
+  357  ls
+  358  touch remove.sh
+  359  chmod +x remove.sh 
+  360  nano remove.sh 
+  361  ./remove.sh 
+  362  nano remove.sh 
+  363  ./remove.sh 
+  364  ls
+  365  ls /mnt/mounting/
+  366  quotaoff /mnt/mounting/
+  367  sudo quotaoff /mnt/mounting/
+  368  quotaon -p /mnt/mounting/
+  369  repquota -a
+  370  sudo warnquota 
+  371  man warnquota
+  372  reboot
+  373  sudo reboot
+  374  sudo apt-get purge quota 
+  375  sudo reboot
+  376  ls /mnt/mounting/
+  377  df 
+  378  quote
+  379  sudo apt-get install quota
+  380  sudo quotacheck -cu /mnt/mounting/
+  381  sudo quotacheck -cu /mnt/mounting
+  382  sudo mount -o remount /mnt/mounting
+  383  sudo quotacheck -cu /mnt/mounting
+  384  cat /etc/fstab 
+  385  apropos users
+  386  users
+  387  find /etc/ -name passwd
+  388  sudo find /etc/ -name passwd
+  389  sudo cat /etc/passwd
+  390  sudo cat /etc/passwd | akw '{print $1}'
+  391  sudo cat /etc/passwd | awk '{print $1}'
+  392  sudo cat /etc/passwd | awk '{print $2}'
+  393  sudo cat /etc/passwd | awk '{print $1}'
+  394  sudo cat /etc/passwd | awk '{print $0}'
+  395  sudo cat /etc/passwd | awk '{print $1}'
+  396  ls
+  397  ls -l
+  398  awk --help
+  399  sudo cat /etc/passwd | awk -F=:'{print $1}'
+  400  sudo cat /etc/passwd | awk -F:'{print $1}'
+  401  sudo cat /etc/passwd | awk -F: '{print $1}'
+  402  chown --help
+  403  sudo useradd testuser
+  404  users
+  405  sudo cat /etc/passwd | awk -F: '{print $1}'
+  406  ls
+  407  cat random 
+  408  sudo groupadd testgroup
+  409  groupmod --help
+  410  man groupadd 
+  411  man groupmod 
+  412  man usermod 
+  413  sudo usermod -G testuser testgroup
+  414  sudo chown testuser:testgroup random 
+  415  ls -l
+  416  sudo chown :root random 
+  417  ls -l
+  418  sudo usermod -a -G testgroup testuser 
+  419  sudo id testuser
+  420  ды
+  421  ls
+  422  ls -la
+  423  ls -l
+  424  chmox ugo-x security_analyzer.sh 
+  425  chmod ugo-x security_analyzer.sh 
+  426  sudo chmod ugo-x security_analyzer.sh 
+  427  ls -l
+  428  sudo chmod ugo+x security_analyzer.sh 
+  429  ls -l
+  430  сhmod u-x parts
+  431  сhmod u-x parts/
+  432  chmod u-x parts/
+  433  cd parts/
+  434  ls -l
+  435  usermod -a -G testuser home 
+  436  sudo usermod -a -G testuser home 
+  437  cd parts/
+  438  ls -l
+  439  sudo usermod -a -G testgroup home 
+  440  id home
+  441  chown :testgroup parts
+  442  sudo chown :testgroup parts
+  443  ls -l
+  444  cd parts/
+  445  chmod u+x parts
+  446  ls -l
+  447  cd parts/
+  448  ls
+  449  cd ..
+  450  chpasswd --help
+  451  usermod --help
+  452  usermod -p
+  453  usermod -p --help
+  454  usermod -p testuser
+  455  sudo cat /etc/passwd
+  456  man usermod 
+  457  sudo usermod -p testuser
+  458  apropos password
+  459  sudo passwd testuser 
+  460  clear
+  461  ls -l
+  462  whereis sudo
+  463  ls -l /usr/bin/
+  464  ls -l /usr/bin/ | grep sudo
+  465  ls
+  466  touch testfile.txt
+  467  ls -l
+  468  mkdir foldertest
+  469  ls -l
+  470  grep umask /etc/profile
+  471  grep umask /etc/login.defs 
+  472  man pam_umask 
+  473  grep UMASK /etc/login.defs 
+  474  cat /etc/login.defs 
+  475  man pam_umask 
+  476  umask
+  477  grep umask /etc/profile
+  478  cat /etc/profile
+  479  ls -l
+  480  umask
+  481  cat /etc/bash.bashrc 
+  482  clear
+  483  cat /etc/bash.bashrc 
+  484  cat /etc/pam.d/common-session
+  485  sudo vi /etc/login.defs 
+  486  sudo vi /etc/profile
+  487  sudo useradd --help
+  488  usermod --help
+  489  sudo usermod -d testuser
+  490  sudo usermod -d /home/testuser testuser
+  491  sudo usermod -d testuser /home/testuser
+  492  sudo mkdir /home/testuser
+  493  sudo usermod -d testuser /home/testuser
+  494  sudo usermod -d /home/testuser testuser
+  495  sudo chown testuser:testuser /home/testuser/
+  496  sudo chmod 755 /home/testuser/
+  497  sudo usermod -d /home/testuser testuser
+  498  ls /home/
+  499  ls - l/home/
+  500  ls - l /home/
+  501  ls -l /home/
+  502  sudo сat /etc/passwd | grep testuser
+  503  sudo cat /etc/passwd | grep testuser
+  504  sudo cat /etc/passwd | grep home
+  505  ls -la /home/home/
+  506  ls -la /home/home/.Xauthority 
+  507  cat  /home/home/.Xauthority 
+  508  sudo adduser --help
+  509  sudo useradd 
+  510  sudo usermod --hel
+  511  man usermod
+  512  man usermod -d /home/testuser/ testuser
+  513  sudo usermod -d /home/testuser/ testuser
+  514  ps aux | grep 169610 > grep
+  515  cat grep 
+  516  ps aux
+  517  sudo ps aux
+  518  sudo usermod -d /home/testuser/ testuser
+  519  cat /etc/sudoers
+  520  sudo cat /etc/sudoers
+  521  id testuser 
+  522  sudo usermod -aG sudo testuser 
+  523  id testuser 
+  524  sudo cat /etc/passwd
+  525  sudo cp /etc/passwd /home/passwd
+  526  ls
+  527  ls /home/
+  528  sudo vi /etc/passwd
+  529  sudo -i
+  530  exit
+  531  sudo -i
+  532  ld
+  533  ls
+  534  ls -l
+  535  ./security_analyzer.sh 
+  536  sudo chmod 770 security_analyzer.sh 
+  537  ls -l
+  538  sudo chown testuser:testuser security_analyzer.sh 
+  539  ls -l
+  540  ./security_analyzer.sh 
+  541  id home
+  542  sudo usermod --help
+  543  sudo usermod -G home 
+  544  sudo gpasswd --help
+  545  man gpasswd 
+  546  sudo gpasswd -d home testuser 
+  547  ./security_analyzer.sh 
+  548  ls -l
+  549  id home
+  550  clear
+  551  su - alice
+  552  ls
+  553  ls /home/home/
+  554  ls -la /home/home/
+  555  su - alice
+  556  ls
+  557  sudo 700 script.sh 
+  558  sudo chmod  700 script.sh 
+  559  ls -l
+  560  sudo chmod u+s script.sh 
+  561  ./script.sh
+  562  ls -l
+  563  stat script.sh 
+  564  sudo chmod u-s script.sh 
+  565  ls -l
+  566  whereis ping
+  567  ls -l /usr/bin/ | grep ping
+  568  ping 8.8.8.8
+  569  sudo chmod g+s script.sh 
+  570  ls -l
+  571  sudo chmod g-s script.sh 
+  572  sudo chmod s+s script.sh 
+  573  sudo chmod u+s script.sh 
+  574  ls -l
+  575  ./script.sh
+  576  whereis sudo
+  577  ls /usr/bin/ | grep sudo
+  578  ls -l /usr/bin/ | grep sudo
+  579  cat /etc/sudoers
+  580  sudo cat /etc/sudoers
+  581  clear
+  582  ls -l
+  583  sudo chmod u-s script.sh 
+  584  sudo chown alice:testuser foldertest/
+  585  ls -l
+  586  sudo chmod g-w foldertest/
+  587  ls -l
+  588  sudo chmod g+s foldertest/
+  589  ls -l
+  590  clear
+  591  sudo touch foldertest/text.txt
+  592  ls -l foldertest/
+  593  sudo chmod g-s foldertest/
+  594  sudo touch foldertest/txt{0..}.txt
+  595  ls -l foldertest/
+  596  sudo touch foldertest/txt{0..2}.txt
+  597  ls -l foldertest/
+  598  sudo chmod g+s foldertest/
+  599  ls -l foldertest/
+  600  ls -l
+  601  ls
+  602  cd foldertest/
+  603  ls -l
+  604  rm *.txt
+  605  ls -l
+  606  sudo rm *.txt
+  607  ls -l
+  608  сlear
+  609  clear
+  610  mkdir folder
+  611  sudo mkdir folder
+  612  ls -l
+  613  cd ..
+  614  rm -r foldertest/
+  615  ls -l
+  616  sudщrm -r foldertest/
+  617  sudo rm -r foldertest/
+  618  ls -l
+  619  mkdir folder
+  620  touch folder/file.txt
+  621  ls -l folder/
+  622  chmod 664 folder/file.txt 
+  623  ls -l folder/file.txt 
+  624  ls -l folder/
+  625  chmod 666 folder/file.txt 
+  626  ls -l folder/
+  627  su --help
+  628  su - alice
+  629  chmod 777 /home/home/
+  630  ls -l /home/
+  631  su -l alice 
+  632  ls
+  633  ls folder/
+  634  chmod o+t folder/
+  635  ls -l
+  636  su - alice
+  637  touch folder/file.txt
+  638  chmod 666 folder/file.txt 
+  639  su - alice 
+  640  touch script.run
+  641  ls -l
+  642  cd folder/
+  643  ls
+  644  clear
+  645  sl
+  646  ;s
+  647  ls
+  648  ln --help
+  649  clear
+  650  link file.txt 
+  651  ln file.txt hard.txt
+  652  ls
+  653  ls -l
+  654  ls -li
+  655  apropos link
+  656  ln -s file.txt sym.txt
+  657  ls -l
+  658  clear
+  659  mkdir folder
+  660  ln folder/ folder.lnk
+  661  ls
+  662  ls -li
+  663  rm sym.txt 
+  664  rm hard.txt 
+  665  ls -s file.txt folder/sym.lnk
+  666  ls -s file.txt folder/
+  667  ls folder/
+  668  ls -l
+  669  ln -s file.txt folder/
+  670  ls folder/
+  671  ls -li folder/
+  672  rm folder/file.txt 
+  673  ln -s file.txt /home/home/folder/folder/
+  674  ls -li folder/
+  675  pwd
+  676  rm folder/file.txt 
+  677  clear
+  678  pцd
+  679  pwd
+  680  ды
+  681  ln -s /home/home/folder/file.txt folder/
+  682  ls -li folder/
+  683  cp file.txt copy.txrt
+  684  ln file.txt hard.txt
+  685  rm -r folder/
+  686  ls -l
+  687  ls -li
+  688  ln file.txt hardl.txt
+  689  ls -li
+  690  ech "HELLO" >> file.txt 
+  691  echo "HELLO" >> file.txt 
+  692  сat file.txt 
+  693  cat file.txt 
+  694  cat hard
+  695  cat hard.txt 
+  696  cat hardl.txt 
+  697  cd ..
+  698  cd /
+  699  ls 
+  700  ls -l
+  701  apropos sudo
+  702  whereis sudo
+  703  ls -l /usr/bin/ | grep sudo
+  704  sudo cat /usr/bin/sudo
+  705  clear
+  706  locate --help
+  707  apt-get locate
+  708  sudo apt-get locate
+  709  sudo apt-cache locate
+  710  sudo find / -name maiд
+  711  sudo find / -name mail
+  712  locate mail
+  713  apt-get update
+  714  sudo apt-get update
+  715  sudo apt-get locate
+  716  sudo apt-get install locate
+  717  locate --help
+  718  sudo find / -name home 
+  719  locate
+  720  man locate
+  721  find /etc -name locate
+  722  sudo find /etc -name locate
+  723  sudo locatedb
+  724  cat /etc/alternatives/locate
+  725  whereis locate
+  726  sudo find /etc -name locate
+  727  ldd locate
+  728  sudo ldd locate
+  729  ldd /usr/bin/locate
+  730  sudo updated
+  731  sudo updatedb
+  732  man updatedb
+  733  which sudo
+  734  whereis sudo
+  735  type sudo
+  736  type ls
+  737  /bin/ls --help
+  738  apropos type
+  739  man type
+  740  type ls
+  741  clear
+  742  ls
+  743  cd boot/
+  744  ls
+  745  ls -l
+  746  lsb_release --help
+  747  lsb_release -s
+  748  lsb_release -a
+  749  sudo find / -n abi*
+  750  sudo find / -name abi*
+  751  sudo find / -name abi
+  752  lsb_release -a
+  753  ls
+  754  ls -l
+  755  grub-mkconfig 
+  756  sudo grub-mkconfig 
+  757  clear
+  758  sudo grub-mkconfig --help
+  759  umask
+  760  which python
+  761  sudo
+  762  sudo apt-get install python
+  763  whereis python3
+  764  python3 --version
+  765  cd Bot/
+  766  pip install -r requirements.ini 
+  767  sudo apt-get install pip
+  768  pip install -r requirements.ini 
+  769  cat requirements.ini 
+  770  python3 --help
+  771  python3 -m venv venv
+  772  apt-get install python3.13-venv
+  773  sudo apt-get install python3.13-venv
+  774  python3 -m venv venv
+  775  source venv/bin/activate
+  776  which pip
+  777  pip install -r requirements.ini 
+  778  exit
+  779  sudo apt update
+  780  sudo apt install python3.11 python3.11-venv python3.11-dev
+  781  sudo apt install python3.12
+  782  pip install aiogram==3.14.0
+  783  pytho3 -m venv venv
+  784  python3 -m venv venv
+  785  source venv/bin/activate
+  786  pip install aiogram==3.14.0
+  787  pwd
+  788  cd Bot/
+  789  vi bot.py 
+  790  python bot.py 
+  791  curl -X POST https://api.telegram.org/8315231889:AAG21t6mCsrB66VvIpMiPYpHNMTQjCXyTsQ/deleteWebhook
+  792  curl -X POST https://api.telegram.org/bot8315231889:AAG21t6mCsrB66VvIpMiPYpHNMTQjCXyTsQ/deleteWebhook
+  793  python3 bot.py 
+  794  grep "async def stats_start" bot.py
+  795  vi bot.py 
+  796  grep -n "async def stats_start" bot.py
+  797  vi bot.py 
+  798  python bot.py 
+  799  vi bot.py 
+  800  sqlite3 applications.db 
+  801  sudo apt-get install applications.db
+  802  sudo apt-get install sqlite3
+  803  sqlite3 applications.db 
+  804  rm applications.db 
+  805  python bot.py 
+  806  history
+  807  cat history > history.txt
+  808  history > history.txt
+  809  cat history.txt 
+  810  man python3.13-venv
+  811  pip3 list 
+  812  sed 
+  813  cat requirements.ini 
+  814  cat requirements.ini | sed 's/2.25.1/3.14.0/'
+  815  cat requirements.ini | sed -i 's/2.25.1/3.14.0/'
+  816  sed -i 's/2.25.1/3.14.0/' requirements.ini 
+  817  cat requirements.ini 
+  818  mv requirements.ini requirements.txt
+  819  touch Dockerfile
+  820  nano Dockerfile 
+  821  cat Dockerfile 
+  822  nano config.py 
+  823  touch .env
+  824  nano .env 
+  825  touch .dockerignore
+  826  vi .dockerignore 
+  827  deactivate 
+  828  apt-get install docker
+  829  sudo apt-get install docker
+  830  sudo apt-cache docker
+  831  sudo apt-cache search docker
+  832  docker build -t telegram-bot .
+  833  sudo snap install docker
+  834  docker build -t telegram-bot .
+  835  sudo docker build -t telegram-bot .
+  836  nano requirements.txt 
+  837  nano Dockerfile 
+  838  sudo docker build -t telegram-bot .
+  839  docker run --env-file .env telgram-bot
+  840  sudo docker run --env-file .env telgram-bot
+  841  sudo docker run --env-file .env telgram-bot .
+  842  docker build -t telegram-bot .
+  843  sudo docker build -t telegram-bot
+  844  sudo docker build -t telegram-bot .
+  845  docker run --env-file .env telegram-bo
+  846  sudo docker run --env-file .env telegram-bo
+  847  sudo docker run --env-file .env telegram-bot
+  848  echo python-dotenv >> requirements.txt 
+  849  cat requirements.txt 
+  850  sudo docker build -t telegram-bot .
+  851  sudo docker run --env-file .env telegram-bot
+  852  sed -i 's/load_dotaenv/load_dotenv/' config.py 
+  853  sudo docker build -t telegram-bot .
+  854  sudo docker run --env-file .env telegram-bot
+  855  sudo docker images
+  856  sudo docker logs telegram-bot
+  857  sudo docker logs <none>
+  858  cat config.py 
+  859  cat bot.py 
+  860  nano bot.py 
+  861  sudo docker run -d --env-file .env telegram-bot
+  862  ps aux | grep bot
+  863  ps aux
+  864  kill 390814
+  865  sudo kill 390814
+  866  sudo docker run --env-file .env telegram-bot
+  867  nano config.py 
+  868  nano bot.py 
+  869  sudo docker build -t telegram-bot .
+  870  sudo docker run --env-file .env telegram-bot
+  871  echo aiosqlite >> requirements.txt 
+  872  nano bot.py 
+  873  sudo docker build -t telegram-bot .
+  874  sudo docker run --env-file .env telegram-bot
+  875  nano bot.py 
+  876  touch docker-compose.yml
+  877  nano docker-compose.yml 
+  878  pwd
+  879  mkdir /data
+  880  sudo mkdir /data
+  881  sudo docker-compose up --build
+  882  nano docker-compose.yml 
+  883  nano bot.py 
+  884  sudo docker-compose up --build
+  885  nano docker-compose.yml 
+  886  sudo docker-compose up --build
+  887  nano Dockerfile 
+  888  cat requirements.txt 
+  889  cat .dockerignore 
+  890  cp .env .env.example
+  891  vi .env.example 
+  892  nano docker-compose.yml 
+  893  sudo docker-compose up --build
+  894  sudo docker-compose up --build -d
+  895  sudo docker-compose logs -f
+  896  ps aux | grep bot
+  897  sudo kill 412573
+  898  sudo docker-compose up --build 
+  899  ps aux
+  900  nano docker-compose.yml 
+  901  sudo docker-compose up --build 
+  902  cat bot.py | grep @router.message(Form.description)
+  903  cat bot.py | grep '@router.message(Form.description)'
+  904  cat bot.py | grep -n '@router.message(Form.description)'
+  905  vi --help
+  906  vi bot.py 
+  907  bano bot.py 
+  908  nano bot.py 
+  909  sudo docker-compose up --build 
+  910  vi bot.py 
+  911  sudo docker-compose up --build 
+  912  vi bot.py 
+  913  sudo docker-compose up --build 
+  914  history > historyDOCKER.txt
